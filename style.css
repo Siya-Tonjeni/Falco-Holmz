@@ -31,7 +31,7 @@
 .nav-bar{
     padding: 10px 5%;
 }
-nav{
+.home-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,18 +41,18 @@ nav{
     width: 140px;
   }
   
-  nav ul li{
+.home-nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
   }
-  nav ul li a{
+.home-nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
   }
-  nav ul li a::after{
+.home-nav ul li a::after{
     content: '';
     width:0;
     height: 3px;
@@ -63,7 +63,7 @@ nav{
     transition: 0.5s;
   }
   
-  nav ul li a:hover::after{
+.home-nav ul li a:hover::after{
     width: 100%;
   }
 
@@ -89,3 +89,65 @@ nav{
     color: #adadad !important;
     font-size: 12px;
   }
+
+
+  /* About page */
+
+  .about-container{
+    margin: 20px 0;
+    background: #000;
+  }
+  .about-container h1{
+    position:static;
+    bottom: 80px;
+    color: #f9f9f9 !important;
+  }
+
+  .about-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+  }
+  .about-nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  .about-nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #000;
+    position: relative;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  .about-nav ul li a:hover::after{
+    width: 100%;
+  }
+
+  /* timeline block */
+  .container img{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    top: 80%;
+    left: 50%;
+  }
+  .col p{
+    position: relative;
+    width: 150%;
+    padding: 20px;
+  }  
+  .image-1{
+    margin: 20px 0 50px 0; 
+   }
+ 

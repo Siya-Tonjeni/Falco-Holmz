@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/splash"
-  to = "/"
-  status = 301
+  from = "/"
+  to = "/splash"
+  status = 302
   force = false

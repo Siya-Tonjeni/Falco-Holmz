@@ -303,6 +303,12 @@
     .music-details__image-container{
       opacity: 0.3;
     } 
+    .splash-container{
+      position: relative;
+    }
+    #splash-screen{
+      position: relative;
+    }
    }
 
    /* .cards{

@@ -173,7 +173,7 @@ skipLink.addEventListener('click', hideSplashScreen);
 // Function to hide splash screen and redirect to index.html
 function hideSplashScreen() {
   splashScreen.style.display = 'none';
-  window.location.href = "index.html"; // Redirect to index.html after hiding
+  window.location.href = "homepage.html"; // Redirect to homepage.html after hiding
 }
 
 

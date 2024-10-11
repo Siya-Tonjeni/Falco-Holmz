@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/splash"
-  status = 302
-  force = false

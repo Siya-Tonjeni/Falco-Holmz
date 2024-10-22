@@ -1,0 +1,129 @@
+/* About page */
+.about-container h1 {
+    position: static;
+    color: #f9f9f9 !important;
+}
+
+.about-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.about-nav ul li {
+    margin: 10px 20px;
+}
+
+.about-nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.about-nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.about-nav ul li a:hover::after {
+    width: 100%;
+}
+
+.link-release {
+    text-decoration: none;
+}
+
+/* General Styling */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    padding: 20px;
+}
+
+.image-1 {
+    margin: 20px 0 50px 0;
+}
+
+.latest-release {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/latest-release.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.latest-release h3 {
+    font-size: 30px;
+}
+
+.latest-release p {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .latest-release h3 {
+        font-size: 24px;
+    }
+
+    .latest-release p {
+        font-size: 16px;
+    }
+
+    .image-1 {
+        margin: 10px 0 20px 0;
+    }
+
+    .col-md-6 h1, .col-md-6 p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 0.9rem;
+    }
+
+    .latest-release h3 {
+        font-size: 20px;
+    }
+
+    .latest-release p {
+        font-size: 14px;
+    }
+}

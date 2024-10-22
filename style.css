@@ -62,8 +62,13 @@
 }
 
 
-.nav-bar{
+/* .nav-bar{
     padding: 10px 5%;
+} */
+.nav-bar {
+  padding: 10px 5%;
+  position: relative; /* Ensure it has a positioning context */
+  z-index: 1000; /* Ensure it's on top of other elements */
 }
 .home-nav{
     display: flex;
@@ -124,6 +129,50 @@
     font-size: 12px;
   }
 
+/* Hide the menu icons on desktop */
+#menu-open, #menu-close {
+  display: none;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  /* Show the bars and x icons on small devices */
+  #menu-open, #menu-close {
+      display: block;
+      font-size: 24px; /* Adjust the size as needed */
+      cursor: pointer;
+  }
+
+  /* Hide the regular navigation menu on small devices until opened */
+  #sidemenu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: #000;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* When menu is open, show it */
+  #sidemenu.active {
+      display: block;
+  }
+}
+
+/* Desktop navigation should always be visible */
+@media (min-width: 769px) {
+  #sidemenu {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  #sidemenu li {
+      margin-left: 20px;
+  }
+}
+
+
 
   /* About page */
 
@@ -166,6 +215,16 @@
   .link-release{
     text-decoration: none;
   }
+
+  .home-nav ul li a.active {
+    color: #b9aeae; 
+    font-weight: bold;
+}
+
+.home-nav ul li a.active::after {
+    width: 100%;
+    background: #b9aeae; 
+}
 
   /* timeline block */
   .container img{
@@ -227,6 +286,7 @@
     font-size: 2rem;
     color: #adadad;
   }
+  
   .fa-spotify:hover{
     color: #1db954;
     font-size: 2.5rem;
@@ -472,10 +532,12 @@
 
 /* Contact page */
 .contact-container{
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   background: url(media/images/cover-img.jpeg);
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
 /* From Uiverse.io by omriluz */ 
 .form-container {
@@ -594,6 +656,10 @@
 .form-container .form-submit-btn:hover {
   background-color: #fff;
   border-color: #fff;
+}
+.footer-contact{
+  position: relative;
+  top: 20%;
 }
 
 /* Splash page */

@@ -28,19 +28,25 @@
         </video>
         
         <div class="nav-bar">
-            <nav class="home-nav">
-                <img class="logo" src="" alt="">
-                <ul id="sidemenu">
+          <nav class="home-nav">
+              <!-- Logo (optional) -->
+              <img class="logo" src="" alt="">
+      
+              <!-- The navigation menu (desktop and mobile) -->
+              <ul id="sidemenu">
                   <li><a href="homepage.html">Home</a></li>
                   <li><a href="about.html">Bio</a></li>
                   <li><a href="musicCover.html">Music</a></li>
-                  <!-- <li><a href="performance.html">Performance</a></li> -->
                   <li><a href="contact.html">Contact</a></li>
-                  <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
-                </ul>
-                <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
-              </nav>
-        </div>
+              </ul>
+      
+              <!-- Menu icons for mobile -->
+              <i class="fa-solid fa-bars" onclick="openmenu()" id="menu-open" style="color: #fff;"></i>
+              <i class="fa-solid fa-xmark" onclick="closemenu()" id="menu-close" style="display: none; color: #fff;"></i>
+          </nav>
+      </div>
+      
+      
         <h1>Falco Holmz</h1>
         <div class="container">
           <footer class="py-3 my-4">
@@ -59,5 +65,21 @@
 
       <!-- End Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      
+      function openmenu() {
+    document.getElementById("sidemenu").classList.add("active");
+    document.getElementById("menu-open").style.display = "none";
+    document.getElementById("menu-close").style.display = "block";
+}
+
+function closemenu() {
+    document.getElementById("sidemenu").classList.remove("active");
+    document.getElementById("menu-open").style.display = "block";
+    document.getElementById("menu-close").style.display = "none";
+}
+
+    </script>
 </body>
 </html>

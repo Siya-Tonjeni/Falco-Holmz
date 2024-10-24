@@ -407,13 +407,12 @@
       margin-top: 20px;
       /* margin-left: 20px; */
     }
-
-    /* .container img{
-      position: relative;
-      right: 0;
-       margin-top: 20px; 
-      margin-left: 20px; 
-    } */
+    footer{
+      left: 23%;
+    }
+    h1{
+      left: 23%;
+    }
      .col-md-4{
       margin-top: 0 !important;
      }

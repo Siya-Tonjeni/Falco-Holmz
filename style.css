@@ -98,8 +98,8 @@
 
   footer{
     position: absolute;
-    bottom: 0;
-    left: 42%;
+    bottom: -1%;
+    left: 40%;
   }
   footer ul{
     margin: 0;
@@ -408,7 +408,12 @@
       /* margin-left: 20px; */
     }
     footer{
-      left: 25%;
+      left: 16%;
+      bottom: 3%;
+      /* font-size: 12px; */
+    }
+    footer p{
+      font-size: 10px;
     }
     h1{
       left: 25%;

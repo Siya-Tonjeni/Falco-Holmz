@@ -215,10 +215,28 @@ body {
     opacity: 1;
 }
 
+footer{
+  position: absolute;
+  bottom: -80%;
+  left: 40%;
+  color: #fff !important;
+}
+footer ul{
+  margin: 0;
+}
+
 /* Two columns on small devices */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+      left: 20%;
+      bottom: -200%;
+      /* font-size: 12px; */
+    }
+    footer p{
+      font-size: 10px;
     }
 }
 

@@ -126,4 +126,13 @@
     .latest-release p {
         font-size: 14px;
     }
+
+    footer{
+        left: 18%;
+        bottom: 0;
+        /* font-size: 12px; */
+      }
+      footer p{
+        font-size: 10px;
+      }
 }

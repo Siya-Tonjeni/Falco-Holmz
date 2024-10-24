@@ -13,6 +13,45 @@ body {
 /* .nav-bar{
     padding: 10px 5%;
 } */
+.music-sidebar{
+    position: fixed;
+   }
+   .music-links {
+    display: flex;
+    /* justify-content: flex-end;  */
+  }
+  
+  .musicMenu {
+    position: relative;
+    list-style: none; 
+    padding: 0; 
+    margin-right: 50px ; 
+    z-index: 2;
+  }
+  
+  .musicMenu li {
+    display: inline-block; 
+    margin-right: 20px;
+  }
+  
+  .musicMenu li a i {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #adadad;
+  }
+  
+  .fa-spotify:hover{
+    color: #1db954;
+    font-size: 1.6rem;
+  }
+  .fa-itunes:hover{
+    color: #f8ff;
+    font-size: 1.6rem;
+  }
+  .fa-youtube:hover{
+    color: #ff0000;
+    font-size: 1.6rem;
+  }
 .nav-bar {
     padding: 10px 5%;
     position: relative; /* Ensure it has a positioning context */

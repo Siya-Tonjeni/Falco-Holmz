@@ -259,45 +259,48 @@
     font-size: 20px !important;
    }
  
-   /* Music page (music.html) */
-   .music-sidebar{
-    position: fixed;
-   }
+  
    .music-links {
     display: flex;
-    justify-content: flex-end; 
+    justify-content:flex-start;
   }
   
   .musicMenu {
-    position: fixed;
+    /* position: fixed; */
     list-style: none; 
     padding: 0; 
-    margin-right: 50px ; 
+    margin-right: 0 ; 
     z-index: 2;
+  }
+  .musicMenu ul{
+    margin: 0;
   }
   
   .musicMenu li {
     display: inline-block; 
-    margin-right: 20px;
+    /* margin-right: 5px; */
   }
   
   .musicMenu li a i {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #adadad;
   }
   
   .fa-spotify:hover{
     color: #1db954;
-    font-size: 2.5rem;
+    font-size: 1.3em;
+    margin: 0;
   }
   .fa-itunes:hover{
     color: #f8ff;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    margin: 0;
   }
   .fa-youtube:hover{
     color: #ff0000;
-    font-size: 2.5rem;
+    font-size: 1.3frem;
+    margin: 0;
   }
 
    .cards{
@@ -664,7 +667,7 @@
 
 /* Splash page */
 .splash-container{
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(media/images/cover-img.jpeg);
@@ -674,7 +677,7 @@
 
 #splash-screen {
   /* Style your splash screen here */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;

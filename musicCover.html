@@ -14,9 +14,14 @@
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/8631d2eceb.js" crossorigin="anonymous"></script>
+
+    <!-- Popup subscription -->
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
     
     <title>Music Covers</title>
     <link rel="stylesheet" href="music.css">
+    
 </head>
 <body>
     <section class="music-section">
@@ -140,6 +145,13 @@ document.getElementById("sidemenu").classList.remove("active");
 document.getElementById("menu-open").style.display = "block";
 document.getElementById("menu-close").style.display = "none";
 }
+</script>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+ (function(){
+    emailjs.init("qJnpv-HUmUU3CJaCC");  // Initialize with your public key
+ })();
 </script>
 </body>
 </html>

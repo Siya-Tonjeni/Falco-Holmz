@@ -51,8 +51,32 @@
                 <i class="fa-solid fa-xmark" onclick="closemenu()" id="menu-close" style="display: none; color: #fff;"></i>
             </nav>
         </div>
+
+        <div class="video-container">
+            <!-- Large Video Player -->
+            <div class="main-video">
+                <iframe id="main-video" width="100%" height="450" 
+                    src="https://www.youtube.com/embed/YOUR_MAIN_VIDEO_ID"
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+    
+            <!-- Video Thumbnails -->
+            <div class="video-grid">
+                <div class="video-item" onclick="changeVideo('VIDEO_ID_1')">
+                    <img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video-item" onclick="changeVideo('VIDEO_ID_2')">
+                    <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video-item" onclick="changeVideo('VIDEO_ID_3')">
+                    <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+        </div>
     </section>
 
+    <script src="videos.js"></script>
     <script src="script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">

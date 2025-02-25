@@ -229,3 +229,50 @@ body {
     }
 }
 
+/* videos.html */
+
+.video-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.main-video {
+  width: 100%;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.video-item {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

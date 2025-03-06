@@ -69,3 +69,15 @@
     text-align: center;
     display: none;
 }
+
+@media (max-width: 768px) {
+    #popup-container {
+        width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    #popup-container {
+        width: 350px;
+    }
+}

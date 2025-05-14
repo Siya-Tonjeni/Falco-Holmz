@@ -682,7 +682,7 @@
 
 .splash-image{
   width: 50%;
-  margin: 0 80px 0 55px;
+  margin: 0 80px;
   border-radius: 25px;
   font-weight: 600;
 }
@@ -707,3 +707,16 @@
  .splash-presave:hover{
   color: #fff;
  }
+
+ @media (max-width: 768px) {
+  .splash-image{
+    margin: 0 80px 0 55px;
+  }
+}
+
+/* One column on very small devices */
+@media (max-width: 480px) {
+  .splash-image{
+    margin: 0 80px 0 55px;
+  }
+}

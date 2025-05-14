@@ -9,7 +9,7 @@
     transition: bottom 0.5s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     z-index: 1000; /* Ensure it's above other elements */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     color: #e9e9e9;
 }

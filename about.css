@@ -63,7 +63,7 @@
 }
 
 .latest-release {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/latest-release.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/song-covers/song-8.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;

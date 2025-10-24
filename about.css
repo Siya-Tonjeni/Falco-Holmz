@@ -63,11 +63,12 @@
 }
 
 .latest-release {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/song-covers/GndPnts_ 1x1 No Text.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/song-covers/song-10.png);
     background-size: cover;
     background-attachment: fixed;
     color: white;
     text-align: center;
+    text-decoration: none;
 }
 
 .latest-release h3 {
@@ -136,4 +137,5 @@
         font-size: 10px;
       }
 }
+
 

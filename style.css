@@ -230,7 +230,7 @@
     margin: 20px 0 50px 0; 
    }
    .latest-release{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/song-covers/song-8.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(media/images/song-covers/song-10.png);
   background-size:contain;
   background-attachment: fixed;
    }
@@ -719,4 +719,5 @@
   .splash-image{
     margin: 0 80px 0 55px;
   }
+
 }
